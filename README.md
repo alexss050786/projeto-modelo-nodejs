@@ -1,8 +1,7 @@
-# Projeto Modelo nodejs sequelize
+# Projeto Modelo nodejs
 
 projeto modelo configurado para nodejs
-- Algumas funcionalidades e exemplo do projeto
-  - CRUD com sequelize
+- CRUD utilizando sequelize                
 
 <pre>
 estrutura das pastas
