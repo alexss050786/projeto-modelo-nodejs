@@ -7,47 +7,52 @@ D => Delete
 */
 const Model = require('../models/ModelName');
 
-//create
-exports.create = async data => {
-  const {name, description} = data;
+module.exports = {
+  //create
+  async create(data){
+    const {name, description} = data;
 
-  const res = await Model.create({
-    name,
-    description
-  });
+    const res = await Model.create({
+      name,
+      description
+    });
 
-  return res;
-};
+    return res;
+  },
+  //read
+  async get() {
+    const res = await Model.findAll();
+    return res;
+  },
 
-//read
-exports.get = async () => {
-  const res = await Model.findAll();
-  return res;
-};
+  async getById(id){
+    const res = await Model.findByPk(id);
+    return res;
+  },
 
-exports.getById = async id => {
-  const res = await Model.findByPk(id);
-  return res;
-};
+  //update
+  async update(id, data){
+    const { name, description} = data;
 
-//update
-exports.update = async (id, data) => {
-  const { name, description} = data;
+    const res = await Model.update({
+      name,
+      description
+    },{
+      where:{
+        id
+      }
+    })
 
-  const res = await Model.update({
-    name,
-    description
-  },{
-    where:{
-      id
-    }
-  })
+    return res;
+  },
 
-  return res;
-};
-
-//delete
-exports.delete = async id => {
-  const res = await Model.destroy(id);
-  return res;
-};
+  //delete
+  async delete(id) {
+    const res = await Model.destroy({
+      where:{
+        id
+      }
+    });
+    return res;
+  }
+}

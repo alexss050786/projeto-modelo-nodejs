@@ -74,6 +74,7 @@ module.exports = {
 
       return res.status(200).send(response(model, 'Apagado com sucesso'));
     } catch (error) {
+      console.log(error);
       return res
         .status(400)
         .send(
