@@ -1,7 +1,7 @@
-# Projeto Modelo NodeJS
+# Projeto Modelo NodeJS (Backend)
 
-projeto modelo configurado para NodeJS
-- CRUD utilizando sequelize                
+Projeto modelo configurado com NodeJS
+- CRUD(exemplo) utilizando sequelize                
 
 <pre>
 estrutura das pastas
