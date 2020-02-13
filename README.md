@@ -1,4 +1,4 @@
-# Projeto Modelo nodejs
+# Projeto Modelo NodeJS
 
 projeto modelo configurado para NodeJS
 - CRUD utilizando sequelize                
