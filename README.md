@@ -1,6 +1,6 @@
 # Projeto Modelo nodejs
 
-projeto modelo configurado para nodejs
+projeto modelo configurado para NodeJS
 - CRUD utilizando sequelize                
 
 <pre>
