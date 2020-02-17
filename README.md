@@ -1,6 +1,5 @@
 # Projeto Template NodeJS (Backend)
 
-Projeto modelo configurado com NodeJS
 - CRUD(exemplo) utilizando sequelize                
 
 <pre>
